@@ -1,6 +1,6 @@
-jscript = Category.create(name: "Javascript")
+jscript = Deck.create(name: "Javascript")
 
-ruby = Category.create(name: "Ruby")
+ruby = Deck.create(name: "Ruby")
 
 jsq1 = Card.create(question: "What does js stand for?", answer: "JavaScript", deck_id: jscript.id)
 
