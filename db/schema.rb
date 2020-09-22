@@ -18,9 +18,10 @@ ActiveRecord::Schema.define(version: 2020_09_22_011235) do
   create_table "cards", force: :cascade do |t|
     t.string "question"
     t.string "answer"
-    t.integer "deck_id"
+    t.bigint "deck_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["deck_id"], name: "index_cards_on_deck_id"
   end
 
   create_table "decks", force: :cascade do |t|
@@ -29,4 +30,5 @@ ActiveRecord::Schema.define(version: 2020_09_22_011235) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "cards", "decks"
 end
