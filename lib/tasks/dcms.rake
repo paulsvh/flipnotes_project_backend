@@ -13,7 +13,5 @@ namespace :db do
       puts 'seeding db ....'
       Rake::Task['db:seed'].invoke
   
-      puts 'starting rails server ....'
-      exec('rails s')
     end
   end
