@@ -2,7 +2,7 @@ class Api::CardsController < ApplicationController
 
     def index
         cards = Card.all
-        render json: cards
+        render json: CardSerializer.new(cards)
     end
 
     def create

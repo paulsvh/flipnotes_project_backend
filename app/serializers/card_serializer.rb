@@ -1,4 +1,5 @@
 class CardSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :question, :answer, :deck
+  #belongs_to :deck
 end
