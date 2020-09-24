@@ -8,7 +8,7 @@ class Api::DecksController < ApplicationController
     def create
         deck = Deck.new(deck_params)
         if deck.save
-            render json: deck, status: :accepted
+            render json: DeckSerializer.new(deck), status: :accepted
         else
             render json: {errors: deck.errors.full_messages}, status: :unprocessible_entity
         end
