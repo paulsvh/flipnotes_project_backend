@@ -1,6 +1,6 @@
 # README
 
-[Link to Front-End](https://github.com/paulsvh/flipnotes_project_frontend "FlipNotes Front-End")
+[Link to Front-End Repo](https://github.com/paulsvh/flipnotes_project_frontend "FlipNotes Front-End")
 
 ## USAGE
 
