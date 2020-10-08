@@ -18,7 +18,6 @@ class Api::CardsController < ApplicationController
         card = Card.find_by(id: params[:id])
         card.destroy
     end
-    
 
     private
 
