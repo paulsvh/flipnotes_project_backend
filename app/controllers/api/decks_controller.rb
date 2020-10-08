@@ -19,6 +19,11 @@ class Api::DecksController < ApplicationController
         render json: DeckSerializer.new(deck)
     end
 
+    def destroy
+        deck = Deck.find_by(id: params[:id])
+        deck.destroy
+    end
+
     private
 
     def deck_params
