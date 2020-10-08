@@ -14,6 +14,12 @@ class Api::CardsController < ApplicationController
         end
     end
 
+    def destroy
+        card = Card.find_by(id: params[:id])
+        card.destroy
+    end
+    
+
     private
 
     def card_params
