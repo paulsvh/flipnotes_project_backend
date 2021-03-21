@@ -1,6 +1,6 @@
-root "application#index"
-
 Rails.application.routes.draw do
+
+root "application#index"
 
 namespace :api do
   resources :cards, only: [:index, :create, :destroy]
