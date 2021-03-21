@@ -1,3 +1,5 @@
+root "application#index"
+
 Rails.application.routes.draw do
 
 namespace :api do
